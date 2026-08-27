@@ -1,19 +1,25 @@
-// Button to quick scroll to the top of the page
+// Button to quick scroll to the top of the page.
 function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
-// Button to quick scroll to the bottom of the page
+// Button to quick scroll to the bottom of the page.
 function scrollToBottom() {
     window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
 }
 
-// Button to hide the footer
+// Button to hide the footer.
 function footerHide() {
     var footer = document.getElementById("mainFooter");
     footer.style.display = "none";
 }
-// Button to show the footer when hidden
+// Button to show the footer when hidden.
 function footerShow() {
     var footer = document.getElementById("mainFooter");
     footer.style.display = "block";
+}
+
+// Get current year.
+function getCurrentYear() {
+    var currentYear = new Date().getFullYear();
+    document.getElementById("currentYear").textContent = currentYear;
 }

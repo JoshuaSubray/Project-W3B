@@ -10,7 +10,7 @@
         <script src="../../js/main.js" defer></script>
         <title>The Moon</title>
     </head>
-    <body>
+    <body onload="getCurrentYear()">
         <header>
             <h1>Space Observation</h1>
         </header>
@@ -97,7 +97,7 @@
                 <img src="../../images/icons/facebook.png" alt="Facebook">
                 <img src="../../images/icons/instagram.png" alt="Instagram">
             </div>
-            <p>&copy;2023 Team W3B</p>
+            <p>&copy; 2023 - <span id="currentYear"></span> Team W3B. All rights reserved.</p>
         </footer>
     </body>
 </html>
